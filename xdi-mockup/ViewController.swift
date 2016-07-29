@@ -9,9 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
   @IBOutlet weak var inputTableView: UITableView!
 
+  @IBOutlet weak var applicationOverlapView: UIView!
+  @IBOutlet weak var actionOverlapView: UIView!
+  
+  @IBOutlet weak var webBrowserButton: UIButton!
+  @IBOutlet weak var musicPlayerButton: UIButton!
+  @IBOutlet weak var arEnvironmentButton: UIButton!
+  
+  @IBOutlet weak var scrollUpButton: UIButton!
+  @IBOutlet weak var scrollDownButton: UIButton!
+  @IBOutlet weak var zoomInButton: UIButton!
+  @IBOutlet weak var zoomOutButton: UIButton!
+  @IBOutlet weak var playSongButton: UIButton!
+  @IBOutlet weak var pauseButton: UIButton!
+  @IBOutlet weak var nextSongButton: UIButton!
+  @IBOutlet weak var previousSongButton: UIButton!
+  @IBOutlet weak var launchContactButton: UIButton!
+  @IBOutlet weak var launchMusicPlayerButton: UIButton!
+  @IBOutlet weak var launchWebBrowserButton: UIButton!
+
+  
   let inputTypes: [String] = [
     "Swipe Up",
     "Swipe Down",
@@ -68,4 +87,27 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return inputTypes.count
   }
+  
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    applicationOverlapView.hidden = true
+    actionOverlapView.hidden = false
+  }
+}
+
+
+// MARK: - UIButton Delegate
+
+extension ViewController {
+  @IBAction func webBrowserButtonTapped(sender: UIButton) {
+    actionOverlapView.hidden = true
+  }
+  
+  @IBAction func musicPlayerButtonTapped(sender: UIButton) {
+    actionOverlapView.hidden = true
+  }
+  
+  @IBAction func arEnvironmentButtonTapped(sender: UIButton) {
+    actionOverlapView.hidden = true
+  }
+  
 }
