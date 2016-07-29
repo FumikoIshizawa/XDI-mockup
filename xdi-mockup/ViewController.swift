@@ -116,6 +116,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     applicationOverlapView.hidden = true
     actionOverlapView.hidden = false
+    webBrowserButton.backgroundColor = UIColor.whiteColor()
+    webBrowserButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+    musicPlayerButton.backgroundColor = UIColor.whiteColor()
+    musicPlayerButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+    arEnvironmentButton.backgroundColor = UIColor.whiteColor()
+    arEnvironmentButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
     deselectAppButtons()
     deselectActionButtons()
   }
