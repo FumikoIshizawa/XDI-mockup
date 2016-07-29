@@ -788,7 +788,7 @@
                                         <variation key="widthClass=regular" constant="90"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
