@@ -13,7 +13,9 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var applicationOverlapView: UIView!
   @IBOutlet weak var actionOverlapView: UIView!
-  
+
+  @IBOutlet weak var appButtonContainerView: UIView!
+
   @IBOutlet weak var webBrowserButton: UIButton!
   @IBOutlet weak var musicPlayerButton: UIButton!
   @IBOutlet weak var arEnvironmentButton: UIButton!
@@ -30,7 +32,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var launchMusicPlayerButton: UIButton!
   @IBOutlet weak var launchWebBrowserButton: UIButton!
 
-  
+
   let inputTypes: [String] = [
     "Swipe Up",
     "Swipe Down",
@@ -70,6 +72,19 @@ extension ViewController {
 }
 
 
+// MARK: - View
+
+extension ViewController {
+  private func deselectAppButtons() {
+    for view in appButtonContainerView.subviews {
+      guard let button = view as? UIButton else { return }
+      button.backgroundColor = UIColor.whiteColor()
+      button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+    }
+  }
+}
+
+
 // MARK: - UITableView Delegate / Data Source
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -91,6 +106,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     applicationOverlapView.hidden = true
     actionOverlapView.hidden = false
+    deselectAppButtons()
   }
 }
 
@@ -100,14 +116,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController {
   @IBAction func webBrowserButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
+    deselectAppButtons()
+    webBrowserButton.backgroundColor = UIColor.darkGrayColor()
+    webBrowserButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+
   }
   
   @IBAction func musicPlayerButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
+    deselectAppButtons()
+    musicPlayerButton.backgroundColor = UIColor.darkGrayColor()
+    musicPlayerButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
   }
   
   @IBAction func arEnvironmentButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
+    deselectAppButtons()
+    arEnvironmentButton.backgroundColor = UIColor.darkGrayColor()
+    arEnvironmentButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
   }
   
 }
