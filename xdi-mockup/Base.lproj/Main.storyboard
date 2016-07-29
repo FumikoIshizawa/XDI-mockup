@@ -225,11 +225,12 @@
                                             <constraint firstAttribute="width" constant="200" id="owV-zF-fnX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Scroll Up">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -243,267 +244,9 @@
                                                 <include reference="owV-zF-fnX"/>
                                             </mask>
                                         </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-hB-hAy">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="42C-We-qEJ">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="200" id="gP7-tn-5sK"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Zoom In">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="42C-We-qEJ"/>
-                                                <exclude reference="gP7-tn-5sK"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="42C-We-qEJ"/>
-                                                <include reference="gP7-tn-5sK"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkg-2h-46b">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="9yD-z4-xxF"/>
-                                            <constraint firstAttribute="height" constant="30" id="lM2-VH-4gT">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Zoom Out">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="9yD-z4-xxF"/>
-                                                <exclude reference="lM2-VH-4gT"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="9yD-z4-xxF"/>
-                                                <include reference="lM2-VH-4gT"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-bG-WVE">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="mh8-cM-I8s"/>
-                                            <constraint firstAttribute="height" constant="30" id="yUx-W7-2Sk">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Play Song">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="mh8-cM-I8s"/>
-                                                <exclude reference="yUx-W7-2Sk"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="mh8-cM-I8s"/>
-                                                <include reference="yUx-W7-2Sk"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-Eh-RF7">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="epg-Yg-tLU"/>
-                                            <constraint firstAttribute="height" constant="30" id="rXk-Bb-ftL">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Pause">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="epg-Yg-tLU"/>
-                                                <exclude reference="rXk-Bb-ftL"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="epg-Yg-tLU"/>
-                                                <include reference="rXk-Bb-ftL"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAj-uK-oeY">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="5N4-mQ-Mei">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="200" id="xYy-2Y-OB5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Next Song">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="5N4-mQ-Mei"/>
-                                                <exclude reference="xYy-2Y-OB5"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="5N4-mQ-Mei"/>
-                                                <include reference="xYy-2Y-OB5"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-ZY-COq">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="V0e-Az-9kZ"/>
-                                            <constraint firstAttribute="height" constant="30" id="ytC-hc-feS">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Previous Song">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="V0e-Az-9kZ"/>
-                                                <exclude reference="ytC-hc-feS"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="V0e-Az-9kZ"/>
-                                                <include reference="ytC-hc-feS"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0z-AY-J3R">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Nfg-7F-m04">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="200" id="adU-UI-VdP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Launch Contacts">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Nfg-7F-m04"/>
-                                                <exclude reference="adU-UI-VdP"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="Nfg-7F-m04"/>
-                                                <include reference="adU-UI-VdP"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV0-j6-ml6">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="5oL-6q-9nD">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                            <constraint firstAttribute="width" constant="200" id="QMb-j7-zaN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Launch Music Player">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="5oL-6q-9nD"/>
-                                                <exclude reference="QMb-j7-zaN"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="5oL-6q-9nD"/>
-                                                <include reference="QMb-j7-zaN"/>
-                                            </mask>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-By-Ipd">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="7y2-Z8-6qH"/>
-                                            <constraint firstAttribute="height" constant="30" id="VBl-xL-Exa">
-                                                <variation key="widthClass=regular" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
-                                        <state key="normal" title="Launch Web Browser">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="7y2-Z8-6qH"/>
-                                                <exclude reference="VBl-xL-Exa"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="7y2-Z8-6qH"/>
-                                                <include reference="VBl-xL-Exa"/>
-                                            </mask>
-                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vj-Im-2rR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95b-Dt-Xzw">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -515,11 +258,12 @@
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Scroll Down">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" red="1" green="0.086274509799999996" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -533,6 +277,306 @@
                                                 <include reference="S39-nT-BRz"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p52-Gm-GU7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-hB-hAy">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="42C-We-qEJ">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="gP7-tn-5sK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Zoom In">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="42C-We-qEJ"/>
+                                                <exclude reference="gP7-tn-5sK"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="42C-We-qEJ"/>
+                                                <include reference="gP7-tn-5sK"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jx7-rM-RjS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkg-2h-46b">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="9yD-z4-xxF"/>
+                                            <constraint firstAttribute="height" constant="30" id="lM2-VH-4gT">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Zoom Out">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="9yD-z4-xxF"/>
+                                                <exclude reference="lM2-VH-4gT"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="9yD-z4-xxF"/>
+                                                <include reference="lM2-VH-4gT"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLT-ex-0jC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-bG-WVE">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="mh8-cM-I8s"/>
+                                            <constraint firstAttribute="height" constant="30" id="yUx-W7-2Sk">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Play Song">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="mh8-cM-I8s"/>
+                                                <exclude reference="yUx-W7-2Sk"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="mh8-cM-I8s"/>
+                                                <include reference="yUx-W7-2Sk"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vqq-cB-agf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-Eh-RF7">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="epg-Yg-tLU"/>
+                                            <constraint firstAttribute="height" constant="30" id="rXk-Bb-ftL">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="epg-Yg-tLU"/>
+                                                <exclude reference="rXk-Bb-ftL"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="epg-Yg-tLU"/>
+                                                <include reference="rXk-Bb-ftL"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LeZ-bd-v3w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAj-uK-oeY">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5N4-mQ-Mei">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="xYy-2Y-OB5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Next Song">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5N4-mQ-Mei"/>
+                                                <exclude reference="xYy-2Y-OB5"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="5N4-mQ-Mei"/>
+                                                <include reference="xYy-2Y-OB5"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovK-Se-aVz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-ZY-COq">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="V0e-Az-9kZ"/>
+                                            <constraint firstAttribute="height" constant="30" id="ytC-hc-feS">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Previous Song">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="V0e-Az-9kZ"/>
+                                                <exclude reference="ytC-hc-feS"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="V0e-Az-9kZ"/>
+                                                <include reference="ytC-hc-feS"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dS3-RI-HNc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0z-AY-J3R">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Nfg-7F-m04">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="adU-UI-VdP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Launch Contacts">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Nfg-7F-m04"/>
+                                                <exclude reference="adU-UI-VdP"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Nfg-7F-m04"/>
+                                                <include reference="adU-UI-VdP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mn-wJ-kyd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV0-j6-ml6">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5oL-6q-9nD">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="QMb-j7-zaN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Launch Music Player">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5oL-6q-9nD"/>
+                                                <exclude reference="QMb-j7-zaN"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="5oL-6q-9nD"/>
+                                                <include reference="QMb-j7-zaN"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDM-fM-s8k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-By-Ipd">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7y2-Z8-6qH"/>
+                                            <constraint firstAttribute="height" constant="30" id="VBl-xL-Exa">
+                                                <variation key="widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Launch Web Browser">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7y2-Z8-6qH"/>
+                                                <exclude reference="VBl-xL-Exa"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="7y2-Z8-6qH"/>
+                                                <include reference="VBl-xL-Exa"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scrollUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBT-jb-BN0"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rg-Vl-Amf">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -579,6 +623,7 @@
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="uFC-VB-ug7"/>
+                                        <exclude reference="95b-Dt-Xzw"/>
                                         <exclude reference="c3B-hB-hAy"/>
                                         <exclude reference="xkg-2h-46b"/>
                                         <exclude reference="2h8-bG-WVE"/>
@@ -588,7 +633,6 @@
                                         <exclude reference="Q0z-AY-J3R"/>
                                         <exclude reference="BV0-j6-ml6"/>
                                         <exclude reference="Crf-By-Ipd"/>
-                                        <exclude reference="95b-Dt-Xzw"/>
                                         <exclude reference="1Rg-Vl-Amf"/>
                                     </mask>
                                     <mask key="constraints">
@@ -623,6 +667,7 @@
                                 <variation key="widthClass=regular">
                                     <mask key="subviews">
                                         <include reference="uFC-VB-ug7"/>
+                                        <include reference="95b-Dt-Xzw"/>
                                         <include reference="c3B-hB-hAy"/>
                                         <include reference="xkg-2h-46b"/>
                                         <include reference="2h8-bG-WVE"/>
@@ -632,7 +677,6 @@
                                         <include reference="Q0z-AY-J3R"/>
                                         <include reference="BV0-j6-ml6"/>
                                         <include reference="Crf-By-Ipd"/>
-                                        <include reference="95b-Dt-Xzw"/>
                                         <include reference="1Rg-Vl-Amf"/>
                                     </mask>
                                     <mask key="constraints">
@@ -729,6 +773,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="actionButtonContainerView" destination="k2E-ai-fRg" id="Cpb-K0-aS5"/>
                         <outlet property="actionOverlapView" destination="1Rg-Vl-Amf" id="eGq-LV-zQU"/>
                         <outlet property="appButtonContainerView" destination="1hA-vo-N0M" id="J25-bX-oHf"/>
                         <outlet property="applicationOverlapView" destination="bzX-YQ-WKK" id="g5a-Rg-XsL"/>

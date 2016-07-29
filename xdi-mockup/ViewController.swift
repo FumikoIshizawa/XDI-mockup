@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var actionOverlapView: UIView!
 
   @IBOutlet weak var appButtonContainerView: UIView!
+  @IBOutlet weak var actionButtonContainerView: UIView!
 
   @IBOutlet weak var webBrowserButton: UIButton!
   @IBOutlet weak var musicPlayerButton: UIButton!
@@ -82,6 +83,15 @@ extension ViewController {
       button.setTitleColor(UIColor.blackColor(), forState: .Normal)
     }
   }
+
+  private func deselectActionButtons() {
+    for view in actionButtonContainerView.subviews {
+      guard let button = view as? UIButton else { return }
+      button.backgroundColor = UIColor.whiteColor()
+      button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+      button.selected = false
+    }
+  }
 }
 
 
@@ -107,6 +117,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     applicationOverlapView.hidden = true
     actionOverlapView.hidden = false
     deselectAppButtons()
+    deselectActionButtons()
   }
 }
 
@@ -135,5 +146,16 @@ extension ViewController {
     arEnvironmentButton.backgroundColor = UIColor.darkGrayColor()
     arEnvironmentButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
   }
-  
+
+  @IBAction func scrollUpButtonTapped(actionButton: UIButton) {
+    if actionButton.selected {
+      actionButton.backgroundColor = UIColor.whiteColor()
+      actionButton.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+      actionButton.selected = false
+    } else {
+      actionButton.backgroundColor = UIColor.darkGrayColor()
+      actionButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+      actionButton.selected = true
+    }
+  }
 }
