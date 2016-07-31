@@ -20,6 +20,10 @@ class ViewController: UIViewController {
   @IBOutlet weak var webBrowserButton: UIButton!
   @IBOutlet weak var musicPlayerButton: UIButton!
   @IBOutlet weak var arEnvironmentButton: UIButton!
+
+  @IBOutlet weak var webBrowserActionsView: UIView!
+  @IBOutlet weak var musicPlayerActionsView: UIView!
+  @IBOutlet weak var arEnvironmentActionsView: UIView!
   
   @IBOutlet weak var scrollUpButton: UIButton!
   @IBOutlet weak var scrollDownButton: UIButton!
@@ -92,6 +96,24 @@ extension ViewController {
       button.selected = false
     }
   }
+
+  private func showWebAppActionButtonView() {
+    webBrowserActionsView.hidden = false
+    musicPlayerActionsView.hidden = true
+    arEnvironmentActionsView.hidden = true
+  }
+
+  private func showMusicAppActionButtonView() {
+    webBrowserActionsView.hidden = true
+    musicPlayerActionsView.hidden = false
+    arEnvironmentActionsView.hidden = true
+  }
+
+  private func showArAppActionButtonView() {
+    webBrowserActionsView.hidden = true
+    musicPlayerActionsView.hidden = true
+    arEnvironmentActionsView.hidden = false
+  }
 }
 
 
@@ -134,6 +156,7 @@ extension ViewController {
   @IBAction func webBrowserButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
     deselectAppButtons()
+    showWebAppActionButtonView()
     webBrowserButton.backgroundColor = UIColor.darkGrayColor()
     webBrowserButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
 
@@ -142,6 +165,7 @@ extension ViewController {
   @IBAction func musicPlayerButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
     deselectAppButtons()
+    showMusicAppActionButtonView()
     musicPlayerButton.backgroundColor = UIColor.darkGrayColor()
     musicPlayerButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
   }
@@ -149,6 +173,7 @@ extension ViewController {
   @IBAction func arEnvironmentButtonTapped(sender: UIButton) {
     actionOverlapView.hidden = true
     deselectAppButtons()
+    showArAppActionButtonView()
     arEnvironmentButton.backgroundColor = UIColor.darkGrayColor()
     arEnvironmentButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
   }
