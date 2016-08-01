@@ -82,7 +82,7 @@ extension ViewController {
 extension ViewController {
   private func deselectAppButtons() {
     for view in appButtonContainerView.subviews {
-      guard let button = view as? UIButton else { return }
+      guard let button = view as? UIButton else { continue }
       button.backgroundColor = UIColor.whiteColor()
       button.setTitleColor(UIColor.blackColor(), forState: .Normal)
     }
